@@ -23,6 +23,10 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: install jupyter-book
+      run: | 
+       pip install jupyter-book --upgrade
+
     - name: Upgrade PIP
       run: |
         pip install --upgrade pip
